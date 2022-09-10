@@ -92,3 +92,20 @@ class Timer {
 const timer = new Timer();
 flatpickr(refs.inputDate, options);
 refs.startBtn.addEventListener('click', () => timer.startTimer());
+
+const styleTimer = document.querySelector('.timer');
+styleTimer.style = `
+display:flex;
+
+`
+const styleValue = document.querySelectorAll('.value').forEach(a => a.style  = `
+display:flex;
+font-size:30px;
+margin-right:30px;
+`);
+const styleLabel = document.querySelectorAll('.label').forEach(a => a.style  = `
+display:flex;
+font-size:10px;
+font-weight:bold;
+text-transform:uppercase;
+`);
