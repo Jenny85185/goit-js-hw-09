@@ -1,4 +1,3 @@
-
 import flatpickr from 'flatpickr';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import 'flatpickr/dist/flatpickr.min.css';
@@ -97,15 +96,21 @@ const styleTimer = document.querySelector('.timer');
 styleTimer.style = `
 display:flex;
 
-`
-const styleValue = document.querySelectorAll('.value').forEach(a => a.style  = `
+`;
+const styleValue = document.querySelectorAll('.value').forEach(
+  a =>
+    (a.style = `
 display:flex;
 font-size:30px;
 margin-right:30px;
-`);
-const styleLabel = document.querySelectorAll('.label').forEach(a => a.style  = `
+`)
+);
+const styleLabel = document.querySelectorAll('.label').forEach(
+  a =>
+    (a.style = `
 display:flex;
 font-size:10px;
 font-weight:bold;
 text-transform:uppercase;
-`);
+`)
+);
